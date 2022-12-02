@@ -1,0 +1,6 @@
+from bs4 import BeautifulSoup
+
+with open("www.zomato.com/istanbul") as fp:
+    soup = BeautifulSoup(fp, 'html.parser')
+
+soup = BeautifulSoup("<html>https://www.zomato.com/istanbul</html>", 'html.parser')
